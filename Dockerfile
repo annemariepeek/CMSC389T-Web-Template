@@ -21,3 +21,6 @@ RUN npm install
 
 RUN node app.js
 
+COPY *
+
+CMD [ "node", "app.js" ]
