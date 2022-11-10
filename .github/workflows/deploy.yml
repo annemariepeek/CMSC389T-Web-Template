@@ -17,5 +17,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd ../pub/My_UMD_website
-              git pull
+                cd /afs/glue.umd.edu/home/glue/a/p/apeek/pub/My_UMD_website
+                git pull
