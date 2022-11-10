@@ -15,10 +15,10 @@ USER node
 
 EXPOSE 8080
 
-RUN npm install
-
 COPY * ./
 
 COPY --chown=node:node . .
+
+RUN npm install
 
 CMD [ "node", "app.js" ]
