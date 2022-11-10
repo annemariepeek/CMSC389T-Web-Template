@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: node:10-alpine
-    container_name: node.js
+    container_name: node-web-app
     restart: unless-stopped
     networks:
       - app-network
