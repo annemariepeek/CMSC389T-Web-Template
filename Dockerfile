@@ -9,8 +9,6 @@ FROM node:10-alpine
 
 RUN mkdir -p /home/node/app/ && chown -R node:node /home/node/app
 
-RUN mkdir -p /home/node/node_modules/ && chown -R node_modules:node_moduels /home/node/node_modules
-
 WORKDIR /home/node/app
 
 USER node
@@ -19,8 +17,8 @@ EXPOSE 8080
 
 RUN npm install
 
-RUN node app.js
+COPY * ./
 
-COPY *
+COPY --chown=node:node . .
 
 CMD [ "node", "app.js" ]
