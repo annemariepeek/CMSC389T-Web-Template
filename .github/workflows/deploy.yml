@@ -17,5 +17,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd My_UMD_website
+              cd ../pub/My_UMD_website
               git pull
