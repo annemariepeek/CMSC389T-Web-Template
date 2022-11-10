@@ -78,7 +78,10 @@ html, body {
 
 .content-section {
     margin: 1em;
-
+    border-color: darkred;
+    border-style: double;
+    border-width: .5em;
+    font-size: larger;
 }
 
 .container {
